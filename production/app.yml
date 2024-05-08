@@ -13,7 +13,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-        - image: pro-img
+        - image: shaikhfahim97/react-repo:tg123
           name: guestbook-ui
           ports:
             - containerPort: 80
