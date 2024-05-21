@@ -12,8 +12,8 @@ pipeline {
       steps {
         script {
           withDockerRegistry(credentialsId: '6b0c28c1-dfe6-4784-a5fe-a0785abd754b') {
-            sh "docker build -t shaikhfahim97/react-repo:rect1 ."
-            sh "docker push shaikhfahim97/react-repo:rect1"
+            sh "docker build -t shaikhfahim97/react-repo:rect2."
+            sh "docker push shaikhfahim97/react-repo:rect2"
             
           }
         }
