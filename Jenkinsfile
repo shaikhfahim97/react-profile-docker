@@ -22,6 +22,7 @@ pipeline {
     
     stage('deploy') {
       steps {
+        sh "argocd login localhost:8090 --username admin --password devops@20L"
         sh "argocd app create guestbook --repo https://github.com/shaikhfahim97/react-profile-docker.git --path production --dest-server https://kubernetes.default.svc --dest-namespace argocd-app"
       }
     }
